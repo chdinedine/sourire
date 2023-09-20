@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sourire</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+	<div id="section_blockHeader">
+		<div class="blockHeader">
+			<span class="icon_modifie edit_block btn-edit">
+				
+			</span>
+			<span class="btn-edit-change">
+				
+			</span>
+		</div>
+	</div>
+	<!-- section Modal suppression -->
+	<div id="modal-delete" class="modal">
+		<div class="modal-container">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+			</div>
+			<div class="madal-block">				
+				<h3 id="modalTitle">Galerie photo</h3>
+				<div class="modal_gallery"></div>
+				<div class="modal_footer">
+					<i class="fa-solid fa-horizontal-rule border_gris"></i>
+					<button type="button" id="btn-add-photo">Ajouter une photo</button>
+					<span id="btn_delete_img">Supprimer la photo</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- section Modal Ajout -->
+	<div id="modal-add" class="modal">
+		<div class="modal-container">
+			<div class="modal-header">
+				<i class="fa-solid fa-arrow-left" id="arrow-left"> </i>
+				<span class="close">&times;</span>
+			</div>			
+			<div class="madal-block">				
+				<h3 id="modalTitle">Ajouter photo</h3>
+				<form id="form">
+					<div class="form_container">
+						<div id="form_img_block">
+							<!--affichage de l'image une fois charger-->
+							<div id="preview-img-block" >
+								<img id="preview-image" src="" alt="Aperçu Image">
+							</div>
+							<!-- fin de l'affichage de l'image-->
+							<i id="fa-i-image" class="fa-sharp fa-regular fa-image" ></i><br>
+							<input type="file" id="image" accept="image/*" >
+							<label id="img-label" for="image" class="file-label" >+ Ajouter photo</label>
+							<span id="type-img-label" >jpg, png : 4mo max</span>
+
+						</div>
+						<div class="form-group">
+							<label for="title">Titre</label>
+							<input type="text" id="title"><br>
+						</div>
+						<div class="form-group">
+							<label for="category">Catégorie</label>
+							<select id="id_categ_form">
+								<option value="0"></option>
+								<option value="1">Objets</option>
+								<option value="2">Appartements</option>
+								<option value="3">Hôtels & Restaurants</option>
+							</select>
+						</div>
+						<div class="modal_footer">
+							<i class="fa-solid fa-horizontal-rule border_gris"></i>
+							<button type="submit" class="btn-activer" id="btn-add">Valider</button>
+							<div id="error-message"></div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<header>
+		<h1>
+			C.Mbamadine			
+			<span>Secrétaire Général</span>
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="#portfolio">projets</a></li>
+				<li><a href="#contact">contact</a></li>
+				<li><a href="login.html" id="login"></a></li>
+				<li><a  href="" id="logout"></a></li>
+				<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="introduction">
+			<figure>
+				<img src="./assets/images/sec.png" alt="">
+				<span id="edit_span" class="btn-edit">
+					<span class="edit_icon_txt "></span>
+				</span>
+			</figure>
+			<article>
+				<h2> SOURIRE PEDIATRIQUE</h2>
+			<p>Vous connaissez peut être un enfant hospitalisé  ou peut être vous venez de découvrire notre  association. Si notre mission vous a séduits, n'hésitez pas à devenir membre et / ou à faire un don.
+ Avec des frais  de fonctionnement strictemnts fixes, chaque cenntime que vous versez particioera directement à l'amélioration de nos services aux enfants malades et hospitalisés dans les service de pédiatrie. </p>
+
+<p>Alors, n'attendez plus, contactez nous en  nous éc rivant  sur  sourire-pediatrique@hotmail.fr 
+ Notre but est entre autres de: </p>
+<p>*mettre un sourire aux enfants  hospitalisés en apportant un allégement à leur hospitalisation dans les services de pédiatrie.     </p>     
+<p>*  Participer au développement des services de pédiatrie , en créant des espaces mères – enfants  dans les services pédiatriques.</p>
+<p>* Et bien d'autres activités relatives  à l'amélioration de la santé des entants dans son ensamble.
+L’association « SOURIRE PEDIATRIQUE » est ouverte à tous sans distinction, de race, de religion, d’âge, de sexe,  de classe sociale et de nationalité Pour faire partie de l’association, il faut d'abord comprendre la charte des nations unis pour les enfants  et être agréé par le bureau exécutif qui statue lors de chacune de ses réunions, sur les demandes présentées,  conformément aux dispositions du règlement intérieur </p>
+
+			</article>
+		</section>
+		<section id="portfolio">
+			<article>
+				<div class="projet_edite ">
+					<h2></h2>
+					<span id="edit_span" class="btn-edit">
+						d
+						<span class="edit_icon_txt"></span>
+					</span>
+				</div>
+				<!--	-->
+				<div class="category" id="categ">
+					<button class="active" id="0" type="button" data-All></button>
+					<button id="1" type="button" data-Objets></button>
+					<button id="2" type="button" data-Appartements></button>
+					<button id="3" type="button" data-Hotels></button>
+				</div>
+
+			</article>
+			<div class="gallery">
+			</div>
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<p></p>
+			<form action="#" method="post">
+				<label for="name">Nom</label>
+				<input type="text" name="name" id="name">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email">
+				<label for="message">Message</label>
+				<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				<input type="submit" value="Envoyer">
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<nav>
+			<ul>
+				<li>Mentions Légales</li>
+			</ul>
+		</nav>
+	</footer>
+	<script src=""></script>
+</body>
+</html>
